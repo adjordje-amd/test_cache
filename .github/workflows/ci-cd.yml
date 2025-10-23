@@ -36,7 +36,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: ROCm/rocm-systems.git
+        repository: ROCm/rocm-systems
         sparse-checkout: projects/rocprofiler-systems/
 
     - name: Install Packages
