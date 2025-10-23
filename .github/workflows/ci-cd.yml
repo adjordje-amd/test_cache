@@ -5,27 +5,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - '.github/workflows/rocprofiler-systems-debian.yml'
-      - 'projects/rocprofiler-systems/**'
-      - '!projects/rocprofiler-systems/*.md'
-      - '!projects/rocprofiler-systems/docs/**'
-      - '!projects/rocprofiler-systems/source/docs/**'
-      - '!projects/rocprofiler-systems/source/python/gui/**'
-      - '!projects/rocprofiler-systems/docker/**'
-      - '!projects/rocprofiler-systems/.wordlist.txt'
-      - '!projects/rocprofiler-systems/CMakePresets.json'
-  pull_request:
-    paths:
-      - '.github/workflows/rocprofiler-systems-debian.yml'
-      - 'projects/rocprofiler-systems/**'
-      - '!projects/rocprofiler-systems/*.md'
-      - '!projects/rocprofiler-systems/docs/**'
-      - '!projects/rocprofiler-systems/source/docs/**'
-      - '!projects/rocprofiler-systems/source/python/gui/**'
-      - '!projects/rocprofiler-systems/docker/**'
-      - '!projects/rocprofiler-systems/.wordlist.txt'
-      - '!projects/rocprofiler-systems/CMakePresets.json'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
